@@ -11,12 +11,14 @@ set_io --warn-no-port iw_b0 115
 #set_io --warn-no-port iw_b2 97
 #set_io --warn-no-port ow_hsync 96
 #set_io --warn-no-port ow_vsync 95
-set_io --warn-no-port ow_r0 113
+set_io --warn-no-port ow_r0 44
 #set_io --warn-no-port ow_r1 93
 #set_io --warn-no-port ow_r2 92
-set_io --warn-no-port ow_g0 112
+set_io --warn-no-port ow_g0 45
 #set_io --warn-no-port ow_g1 90
 #set_io --warn-no-port ow_g2 89
-set_io --warn-no-port ow_b0 98
+set_io --warn-no-port ow_b0 47
 #set_io --warn-no-port ow_b1 87
 #set_io --warn-no-port ow_b2 86
+set_io --warn-no-port ow_hsync 48
+set_io --warn-no-port ow_vsync 56

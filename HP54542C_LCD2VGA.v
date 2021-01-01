@@ -23,6 +23,8 @@ module HP54542C_LCD2VGA(
 	output wire ow_b0,
 	//output wire ow_b1,
 	//output wire ow_b2,
+	output wire ow_hsync,
+	output wire ow_vsync,
 );
 
 parameter p_hpixels_active = 640;
@@ -59,6 +61,8 @@ assign ow_g0 = r_active_area ? iw_g0 : 0;
 assign ow_b0 = r_active_area ? iw_b0 : 0;
 //assign ow_b1 = r_active_area ? iw_b1 : 0;
 //assign ow_b2 = r_active_area ? iw_b2 : 0;
+assign ow_hsync = r_hsync;
+assign ow_vsync = r_vsync;
 
 integer i;
 
