@@ -1,6 +1,6 @@
 `default_nettype none
 
-module HP54542C_LCD_to_VGA(
+module HP54542C_LCD2VGA(
 	input wire iw_clk,
 	input wire iw_sync,
 	input wire iw_r0,
