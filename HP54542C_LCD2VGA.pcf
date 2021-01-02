@@ -22,3 +22,9 @@ set_io --warn-no-port ow_b0 47
 #set_io --warn-no-port ow_b2 86
 set_io --warn-no-port ow_hsync 48
 set_io --warn-no-port ow_vsync 56
+
+set_io --warn-no-port D1 99
+set_io --warn-no-port D2 98
+set_io --warn-no-port D3 97
+set_io --warn-no-port D4 96
+set_io --warn-no-port D5 95
