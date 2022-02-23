@@ -6,4 +6,5 @@
 *.txt
 *.svg
 *.png
+*.vcd
 obj_dir/
