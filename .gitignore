@@ -6,3 +6,4 @@
 *.txt
 *.svg
 *.png
+obj_dir/
