@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "HP_54542C_Display_Adapter")(type "KiCad")(uri "${KIPRJMOD}/HP_54542C_Display_Adapter.pretty")(options "")(descr ""))
+)
