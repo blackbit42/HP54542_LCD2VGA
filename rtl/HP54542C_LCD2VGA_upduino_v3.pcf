@@ -1,0 +1,41 @@
+# Pin-mapping for UPDuino V3
+
+set_io --warn-no-port iw_r0 2
+#set_io --warn-no-port iw_r1
+#set_io --warn-no-port iw_r2
+
+set_io --warn-no-port iw_g0 45
+#set_io --warn-no-port iw_g1
+#set_io --warn-no-port iw_g2
+
+set_io --warn-no-port iw_b0 9
+#set_io --warn-no-port iw_b1
+#set_io --warn-no-port iw_b2
+
+set_io --warn-no-port iw_clk 44
+set_io --warn-no-port iw_sync 6
+
+set_io --warn-no-port ow_r0 28
+#set_io --warn-no-port ow_r1
+#set_io --warn-no-port ow_r2
+
+set_io --warn-no-port ow_g0 36
+#set_io --warn-no-port ow_g1
+#set_io --warn-no-port ow_g2
+
+set_io --warn-no-port ow_b0 37
+#set_io --warn-no-port ow_b1
+#set_io --warn-no-port ow_b2
+
+set_io --warn-no-port ow_hsync 32
+set_io --warn-no-port ow_vsync 27
+
+#set_io --warn-no-port D_up 99
+#set_io --warn-no-port D_right 98
+#set_io --warn-no-port D_down 97
+#set_io --warn-no-port D_left 96
+#set_io --warn-no-port D_center 95
+
+set_io --warn-no-port led_r 41
+set_io --warn-no-port led_g 40
+set_io --warn-no-port led_b 39

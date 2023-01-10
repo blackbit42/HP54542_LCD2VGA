@@ -11,11 +11,14 @@ module HP54542C_LCD2VGA(
 	output wire ow_b0,
 	output wire ow_hsync,
 	output wire ow_vsync,
-	output wire D_up,
-	output wire D_right,
-	output wire D_down,
-	output wire D_left,
-	output wire D_center
+	// output wire D_up,
+	// output wire D_right,
+	// output wire D_down,
+	// output wire D_left,
+	// output wire D_center
+	output wire led_r,
+	output wire led_g,
+	output wire led_b
 );
 
 localparam p_hpixels_active = 640 - 1;
@@ -30,7 +33,7 @@ localparam p_vga_vsp = 2;
 localparam p_vga_vbp = 33;
 localparam p_vga_vpixels = p_vpixels_active + p_vga_vfp + p_vga_vsp + p_vga_vbp; // 525
 
-reg r_found_start = 0;
+reg r_found_start = 1;
 reg reset = 0;
 
 reg [31:0] r32_clk_counter = 32'b0;
@@ -39,11 +42,15 @@ reg [31:0] r32_last_sync_pulse = 32'b0;
 reg [9:0] hpos = 10'b0;
 reg [9:0] vpos = 10'b0;
 
-assign D_up = 0;
-assign D_right = 0;
-assign D_down = 0;
-assign D_left = 0;
-assign D_center = r_found_start;
+// assign D_up = 0;
+// assign D_right = 0;
+// assign D_down = 0;
+// assign D_left = 0;
+// assign D_center = r_found_start;
+
+assign led_r = 1;
+assign led_g = 1;
+assign led_b = r_found_start;
 
 // iw_[rgb][012] should be asserted to 0 during porches anyways, but let's
 // make sure...
@@ -84,7 +91,7 @@ begin
 		begin
 			reset <= 1;
 			if (!r_found_start)
-				r_found_start <= 1;
+				r_found_start <= 0;
 		end
 end
 
